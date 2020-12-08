@@ -54,15 +54,42 @@
 			top: 250px;
 			left: 800px;
 			}
+			ul {
+  			list-style-type: none;
+  			margin: 0;
+ 			padding: 0;
+  			overflow: hidden;
+  			background-color: #000000;
+			}
+			li {
+ 			float: left;
+			padding: 3px;
+			}
+			li a {
+  			display: block;
+ 			color: white;
+  			text-align: center;
+ 			padding: 12px 20px;
+  			text-decoration: none;
+			font-family: Arial;
+			}
+			li a:hover:not(.active) {
+  			background-color: #add8e6;
+			}
+			.active {
+  			background-color: #add8e6;
+			}
 
 		</style>
 	</head>
 
 	<div class="navigational bar">
-		<img src="LOGO.png" alt="Top" width="20" height="20"/>
-  		<a class="active" href="Home.html"> Home</a>
-  		<a href="Contact.html"> Contact Info</a>
-		<input type="text" placeholder="Search..">
+  		<ul>
+			<li><img src="LOGO.png" alt="Logo" width="40" height="40"/>
+  			<li><a href="Home.html">Home</a></li>
+  			<li><a href="Contact.html">Contact</a></li>
+ 		 	<li style="float:right"><input type="text" placeholder="Search..">
+		</ul>
 	</div>
 
 	<body>
@@ -81,7 +108,7 @@
 			<div class ="fill-up">
 				<input type="text" NAME="Full Name" VALUE="Full Name" SIZE=60><br>
 				<input type="text" EMAIL="Email" VALUE="Email" SIZE=60><br>
-				<textarea message=“Message” ROWS=7 COLS=57 WRAP>Message</TEXTAREA>,<br>
+				<textarea message=â€œMessageâ€ ROWS=7 COLS=57 WRAP>Message</TEXTAREA>,<br>
 				<button type="button" style="background-color:#add8e6;">Submit Message </button>
 			</div>
 		
