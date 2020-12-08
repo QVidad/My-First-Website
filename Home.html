@@ -85,15 +85,42 @@
 			top: 20px;
 			left: 550px;
 			}
-			
+			ul {
+  			list-style-type: none;
+  			margin: 0;
+ 			padding: 0;
+  			overflow: hidden;
+  			background-color: #000000;
+			}
+			li {
+ 			float: left;
+			padding: 3px;
+			}
+			li a {
+  			display: block;
+ 			color: white;
+  			text-align: center;
+ 			padding: 12px 20px;
+  			text-decoration: none;
+			font-family: Arial;
+			}
+			li a:hover:not(.active) {
+  			background-color: #add8e6;
+			}
+			.active {
+  			background-color: #add8e6;
+			}
+
 		</style>
 	</head>
 
 	<div class="navigational bar">
-		<img src="LOGO.png" alt="Logo" width="20" height="20"/>
-  		<a class="active" href="Home.html"> Home</a>
-  		<a href="Contact.html"> Contact Info</a>
-		<input type="text" placeholder="Search..">
+  		<ul>
+			<li><img src="LOGO.png" alt="Logo" width="40" height="40"/>
+  			<li><a href="Home.html">Home</a></li>
+  			<li><a href="Contact.html">Contact</a></li>
+ 		 	<li style="float:right"><input type="text" placeholder="Search..">
+		</ul>
 	</div>
 
 	<body>
