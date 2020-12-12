@@ -1,19 +1,25 @@
-<?php
-	$name = $_Post['name'];
-	$visitorEmail = $_Post['email'];
-	$message = $_Post['message'];
-	
-	$email_from = 'hidden-wonders-in-luzon.herokuapp.com';
-	$email_subject = "New Form Submission";
-	$email_body = "User Name: $name.\n".
-			"User Email: $visitorEmail.\n".
-			"User Message: $message.\n";
+<?php 
+		$name = $_POST['name'];
+		$visitor_email = $_POST['email'];
+		$message = $_POST['message'];
 
-	$to = "qvidad@gmail.com";
+		$email_from = 'msqvidad@gmail.com';
 
-	$headers = "From: $email_from \r\n";
-	$headers .= "Reply to: $visitorEmail \r\n";
+		$email_subject = 'New Form Query!';
 
-	mail($to,$email_subject,$email_body,$headers);
-	header("Location: Contact.html");
-?>
+		$email_body = "Visitor Name : $name.\n".
+						"Visitor Email : $visitor_email.\n".
+							"Visitor Message : $message.\n";
+
+
+	 $to ="qvidad@gmail.com";
+
+	 $headers = "Form : $email_from \r\n";
+	 $headers .= "Reply-To : $visitor_email \r\n";
+
+	$run = mail($to,$email_subject,$email_body,$headers);
+
+    if($run)
+	 	echo "<script>alert('Form Submitted!');location.href='Contact.html';</script>";
+
+ ?>
