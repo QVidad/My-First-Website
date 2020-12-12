@@ -3,7 +3,7 @@
 	$visitorEmail = $_Post['email'];
 	$message = $_Post['message'];
 	
-	$email_from = 'qvidad@gmail.com';
+	$email_from = 'hidden-wonders-in-luzon.herokuapp.com';
 	$email_subject = "New Form Submission";
 	$email_body = "User Name: $name.\n".
 			"User Email: $visitorEmail.\n".
