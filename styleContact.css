@@ -41,6 +41,7 @@
   			text-decoration: none;
 			font-family: Cairo;
 			cursor: pointer;
+			transition: 1s;
 			}
 			header li a:hover:not(.active) {
   			background-color: #add8e6;
@@ -205,4 +206,3 @@
 			background: url(pics/Turtle.png) no-repeat;;
 			background-size: cover;
 			}
-			
