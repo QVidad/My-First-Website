@@ -1,0 +1,195 @@
+
+			body {
+			background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(pics/Header.png) no-repeat;
+			background-color: #222021;
+			background-size: cover;
+			height: 90vh;
+			background-position: top-center;
+			}
+			/* css for the navigation bar */
+			header {
+			position: fixed;
+			top: 0px;
+			width:99%;
+			transition: 2s;
+			z-index: 1;
+			}
+			header.sticky {
+  			background-color:#fefefa;
+			}
+			header.sticky ul li a{
+			color: #222021;
+			font-weight: bold;
+			}
+			header ul {
+  			overflow: hidden;
+			box-sizing: border-box;
+			font-size: 25px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			}
+			header li {
+			list-style-type: none;
+ 			float: left;
+			padding: 3px;
+			}
+			header li a {
+  			display: block;
+ 			color: white;
+  			text-align: center;
+ 			padding: 12px 20px;
+  			text-decoration: none;
+			font-family: Cairo;
+			cursor: pointer;
+			transition: 1s;
+			}
+			header li a:hover:not(.active) {
+  			background-color: #add8e6;
+			}
+			.active {
+  			background-color: #add8e6;
+			}
+
+			/* css for the search bar */
+			.wrapper{
+			display: flex;
+			align-items: center;
+			}
+			.search_box{
+			background: #add8e6;
+			position: relative;
+			height: 55px;
+			padding: 5px;
+			border-radius: 50px;
+			margin-right: 15px;
+			display: flex;
+			}
+			.search_box .search_btn{
+			width: 40px;
+			height: 55px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #ffffff;
+			margin-left: 5px;
+			margin-right: 5px;
+			cursor: pointer;
+			}
+			.search_box .input_search{
+			outline: none;
+			border: 0;
+			background: #ffffff;
+			border-radius: 50px;
+			padding: 15px 20px;
+			width: 300px; 
+			height: 55px;
+			color: #000000;
+			font-family: Cairo;
+			font-size: 20px;
+			}
+			::placeholder {
+  			color: #000000;
+			}
+			::-webkit-input-placeholder {
+  			color: #000000;
+			}
+			:-ms-input-placeholder {
+  			color: #000000;
+			}
+
+			/* css for the upper part */
+			.upper {
+  			position: relative;
+			top: 25vh;
+			}
+			.centered {
+  			position: relative;
+  			top: 50%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);
+			font-family: Yatra One;
+			color: #add8e6;
+			font-size: 50px;
+			font-weight: bold;
+			white-space: nowrap;
+			text-align: center;
+			}
+			.line {
+			font-family: B612;
+			color: #ffffff;
+			font-size: 25px;
+			}
+
+			/* css for the lower part */
+			.lower {
+  			position: relative;
+			top: 50vh;
+			text-align: center;
+			}
+			h1 {
+			font-size: 70px;
+			font-family: Yatra One;
+			text-align: center;
+			letter-spacing: 1vh;
+			color: #add8e6;
+			border-bottom: 5px;
+			border-bottom-style: solid;
+			border-bottom-color: #555555;
+			line-height: 35px;
+			}
+			h2 {
+			font-size: 60px;
+			font-family: Cairo;
+			font-weight: 900px;
+			letter-spacing: 5px;
+			color: #add8e6;
+			}
+			h5 {
+			font-size: 25px;
+			font-family: Cairo;
+			text-align: justify;
+			color: #ffffff;
+			padding: 0 5vh 0 5vh;
+			margin-bottom: 10vh;
+			}
+			.time-section {
+			position: absolute;
+			font-family: B612;
+			}
+			.clock{
+			position: relative;
+			left: 53vh;
+  			background: #222021;
+  			height: 120px;
+  			line-height: 120px;
+  			text-align: center;
+  			padding: 0 30px;
+  			box-shadow: -3px -3px 7px rgba(255,255,255,0.05),
+               				3px 3px 5px rgba(0,0,0,0.5);
+			}
+			.clock .display{
+  			font-size: 80px;
+  			color: #15f4ee;
+  			letter-spacing: 5px;
+  			font-family: Cairo;
+			}
+			.region-section{
+  			position: relative;
+			text-align: center;
+			top: 80vh;
+			}	
+			.photo {
+			height: 420px;
+  			width: 600px;
+			box-shadow: 5px 5px 10px rgba(255,255,255,0.5);
+			}
+			/* css for the sticky-bottom */
+			.bottomPart {
+  			position: relative;
+			top: 15vh;
+			width: 100%;
+			height: 15vh;
+			background: url(pics/Header.png) no-repeat;;
+			background-size: cover;
+			}
