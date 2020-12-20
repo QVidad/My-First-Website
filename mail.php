@@ -41,5 +41,5 @@
 //Closing smtp connection
     $mail->smtpClose();
     
-    header("Location: Contact.html");
+    header("Location: https://hidden-wonders-in-luzon.herokuapp.com/Contact.html");
 ?>
