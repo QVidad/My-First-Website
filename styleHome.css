@@ -124,7 +124,7 @@
 			/* css for the lower part */
 			.lower {
   			position: relative;
-			top: 55vh;
+			top: 65vh;
 			}
 			h1 {
 			font-size: 70px;
@@ -135,7 +135,7 @@
 			border-bottom: 5px;
 			border-bottom-style: solid;
 			border-bottom-color: #555555;
-			line-height: .0;
+			line-height: 35px;
 			}
 			.lowerLeft {
 			position: absolute;
@@ -289,7 +289,7 @@
 			/* css for the favorites section */
 			.section3 {
 			position: relative;
-			top: 126vh;
+			top: 140vh;
 			}
 			.favorites{
   			height: 70%;
