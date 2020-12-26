@@ -124,13 +124,10 @@
 			/* css for the upper part */
 			.upper {
   			position: relative;
-			top: 25vh;
+			top: 20vh;
 			}
 			.centered {
   			position: relative;
-  			top: 50%;
-  			left: 50%;
-  			transform: translate(-50%, -50%);
 			font-family: Yatra One;
 			color: #add8e6;
 			font-size: 50px;
@@ -138,12 +135,20 @@
 			white-space: nowrap;
 			text-align: center;
 			}
+			.line {
+			font-family: B612;
+			color: #ffffff;
+			font-size: 25px;
+			}
 
 			/* css for the search result */
 			.container {
 			position: relative;
 			width: 100%;
 			top: 50vh;
+			overflow: hidden;
+			box-sizing: border-box;
+			
 			}
 			.card {
 			position: relative;
@@ -153,12 +158,13 @@
 			right: 12vh;
 			background-color: #555555;
 			padding: 15px 0px;
-			display: flex;
 			margin: 20px;
+			display: flex;
+			justify-content: center;
+			visibility: hidden;
 			}
 			.left_part {
 			position: relative;
-			width: 320px;
 			height: 220px;
 			left: -110px;
 			background-color: #aaaaaa;
@@ -212,6 +218,9 @@
   			box-shadow: -3px -3px 7px rgba(255,255,255,0.05),
                				3px 3px 5px rgba(0,0,0,0.5);
 			}
+			.button a:hover {
+			width: 160px;
+			}
 
 			/* css for the footer */
 			footer {
@@ -221,5 +230,4 @@
     			bottom: -50vh;
     			height: 100px;
     			width: 100%;
-    			overflow: hidden;
 			}
