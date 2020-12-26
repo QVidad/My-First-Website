@@ -188,12 +188,13 @@
 			text-indent: 100px;
 			}
 			.button {
-			position: relative;
+			position: absolute;
 			display: flex;
 			margin: 20px 0px 20px 0px;
 			text-align: center;
 			float: right;
-			top: -50px;
+			bottom: -25px;
+			right: 0px;
 			}
 			.button a {
   			height: 60px;
