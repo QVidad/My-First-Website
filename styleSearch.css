@@ -139,73 +139,70 @@
 			text-align: center;
 			}
 
-/* css for the search result */
-.container {
-position: relative;
-width: 100%;
-top: 50vh;
-}
-
-.card {
-position: relative;
-float: right;
-width: 80%;
-height: 220px;
-right: 12vh;
-background-color: #555555;
-padding: 15px 0px;
-display: flex;
-margin: 20px;
-
-}
-
-.left_part {
-position: relative;
-width: 320px;
-height: 220px;
-left: -110px;
-background-color: #aaaaaa;
-border-radius: 20px;
-box-shadow: -3px -3px 7px rgba(0,0,0,0.5),
+			/* css for the search result */
+			.container {
+			position: relative;
+			width: 100%;
+			top: 50vh;
+			}
+			.card {
+			position: relative;
+			float: right;
+			width: 80%;
+			height: 220px;
+			right: 12vh;
+			background-color: #555555;
+			padding: 15px 0px;
+			display: flex;
+			margin: 20px;
+			}
+			.left_part {
+			position: relative;
+			width: 320px;
+			height: 220px;
+			left: -110px;
+			background-color: #aaaaaa;
+			border-radius: 20px;
+			box-shadow: -3px -3px 7px rgba(0,0,0,0.5),
                				3px 3px 5px rgba(0,0,0,0.5);
-}
-.left_part .img {
-width: 320px;
-height: 220px;
-border-radius: 20px;
-}
-.right_part {
-position: relative;
-left: -70px;
-}
-h1 {
-font-family: Cairo;
-line-height: .5;
-letter-spacing: 2px;
-color: #add8e6;
-}
-h2 {
-font-family: B612;
-color: #ffffff;
-text-align: justify;
-text-indent: 100px;
-}
-.button {
-position: relative;
-display: flex;
-margin: 20px 0px 20px 0px;
-text-align: center;
-float: right;
-top: -60px;
-}
-.button a {
+			}
+			.left_part .img {
+			width: 320px;
+			height: 220px;
+			border-radius: 20px;
+			}
+			.right_part {
+			position: relative;
+			left: -70px;
+			}
+			h1 {
+			font-family: Cairo;
+			line-height: .5;
+			letter-spacing: 2px;
+			color: #add8e6;
+			}
+			h2 {
+			font-family: B612;
+			color: #ffffff;
+			text-align: justify;
+			text-indent: 100px;
+			}
+			.button {
+			position: relative;
+			display: flex;
+			margin: 20px 0px 20px 0px;
+			text-align: center;
+			float: right;
+			top: -60px;
+			}
+			.button a {
   			height: 60px;
   			width: 150px;
   			display: block;
   			line-height: 60px;
   			border-radius: 30px;
   			text-decoration: none;
-font-family: Cairo;
+			font-family: Cairo;
   			font-size: 18px;
 			color: #15f4ee;
   			text-transform: uppercase;
@@ -213,7 +210,7 @@ font-family: Cairo;
   			overflow: hidden;
   			box-shadow: -3px -3px 7px rgba(255,255,255,0.05),
                				3px 3px 5px rgba(0,0,0,0.5);
-}
+			}
 
 			/* css for the footer */
 			footer {
