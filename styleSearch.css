@@ -124,7 +124,7 @@
 			/* css for the upper part */
 			.upper {
   			position: relative;
-			top: 20vh;
+			top: 25vh;
 			}
 			.centered {
   			position: relative;
@@ -134,6 +134,7 @@
 			font-weight: bold;
 			white-space: nowrap;
 			text-align: center;
+			line-height: 1px;
 			}
 			.line {
 			font-family: B612;
