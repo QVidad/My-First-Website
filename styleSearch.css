@@ -5,6 +5,7 @@
 			background-size: cover;
 			height: 90vh;
 			background-position: top-center;
+			position: absolute;
 			}
 			/* css for the navigation bar */
 			header {
