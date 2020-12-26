@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Hidden Wonders in Luzon: Wonders Page </title>
+		<link rel="stylesheet" type="text/css" href="styleSearch.css">
+		<link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=B612&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<script type="text/javascript" src="javascripts/index.js"></script>
+		<script type="text/javascript" src="javascripts/result.js"></script>
+	</head>
+
+	<body>
+	<header>
+		<!--navigation bar start-->
+		<div class="navibar">
+  			<ul>
+				<li><img src="pics/LOGO.png" alt="Logo" width="75" height="60"/>
+  				<li><a href="Home.html">Home</a></li>
+				<li><a href="Wonders.html">Wonders</a></li>
+  				<li><a href="Contact.html">Contact</a></li>
+ 		 		<li style="float:right">
+				<form id ="search-form" method="post" action="Search.html">
+				<div id="searchbar" class="collapsed">
+				<div id="search-box">
+     					<div id="sliding-panel-outer">       
+      						<div id="sliding-panel-inner">
+      							<input type="text" id="search" name="search" class="search-input" placeholder="Search..." required/>
+      							<input class="btn" type="submit" onclick="handleSubmit()"/>
+							
+      						</div>
+     					</div>
+      					<div class="search-label">
+        					<i class="fa fa-search"></i>
+        					<i class="fa fa-times"></i>
+      					</div>
+   				</div>
+				</div>
+				</form>
+			</ul>
+		</div>
+		<!--navigation bar end-->
+	</header>
+		<!--upper part start-->
+		<div class="upper">
+       	 		<div class="centered">
+            			Result of Your Search: <span id="result-search"/>
+        			</div>
+		</div>
+		<!--upper part end-->
+		<!--search result start-->
+			<div class="container">
+				<div class="card">
+					<div class="left_part">
+						<img src="pics/1.png" class="img">
+					</div>
+					<div class="right_part">
+						<h1>Apayao Road</h1>
+						<h2>This road is a shortcut from Ilocos Norte to Apayao Province. This is a difficult road to travel since it's in a mountain, but because of its wonderful view of Mt. Kilang people are willing to go into the adventure.</h2>
+						<div class="button"><a href="Wonders.html">Read more</a></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="left_part">
+						<img src="pics/2.png" class="img">
+					</div>
+					<div class="right_part">
+						<h1>Aw-asen Falls</h1>
+						<h2>This falls is located at Sigay, Ilocos Sur. Its not actually the destination that makes it memorable, its the journey. It is not easy to go there that's why adventurer loves it.</h2>
+						<div class="button"><a href="Wonders.html">Read more</a></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="left_part">
+						<img src="pics/3.png" class="img">
+					</div>
+					<div class="right_part">
+						<h1>Kaparkan Falls</h1>
+						<h2>This falls is located at Tineg, Abra. This is a falls is something that you probably never even thought that could exist. What makes this unique is its uneven land forms which creates a beautiful water flow.</h2>
+						<div class="button"><a href="Wonders.html">Read more</a></div>
+						</div>
+					</div>
+				<div class="card">
+					<div class="left_part">
+						<img src="pics/4.png" class="img">
+					</div>
+					<div class="right_part">
+						<h1>Pasaleng Bay</h1>
+						<h2>This beach can only be seen at Pasaleng, Pagudpud. People loves to visit this place because of its crystal clear water. Visitor can even go to the Makagutugot Cave nearby which is one boat ride away.</h2>
+						<div class="button"><a href="Wonders.html">Read more</a></div>
+					</div>
+				</div>
+			</div>
+		<!--search result start-->
+	<!--the footer start-->
+	<footer>
+		<div class="bottomPart"></div>
+	</footer>
+		<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+		<script type="text/javascript" src="javascripts/naviBar.js"></script>
+		<script type="text/javascript" src="javascripts/setTime.js"></script></script>
+		<script type="text/javascript" src="javascripts/search.js"></script>
+
+	</body>
+</html> 
