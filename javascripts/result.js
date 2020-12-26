@@ -15,9 +15,11 @@ window.addEventListener('load', () => {
     	}
 	if (search == 'Kaparkan'||search == 'kaparkan'||search == 'Falls'||search == 'falls'){
 		document.getElementById('Kaparkan').style.visibility='visible';
+		result = true;
     	}
 	if (search == 'Pasaleng'||search == 'pasaleng'||search == 'Bay'||search == 'bay'){
 		document.getElementById('Pasaleng').style.visibility='visible';
+		result = true;
     	}
 
 	if (result == false) {
