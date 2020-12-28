@@ -474,8 +474,8 @@
 				.Places { left: 5px; }
 			
 				/* for the favorites section */
-				.section3 { top: 80vh; }
-				.container{ padding: 0 10px; }
+				.section3 { width: 100%; top: 80vh; }
+				.container{ width: 100%; padding: 0 10px; }
 				.card{ height: 260px; max-width: 150px; margin: 0 5px; }
 				.card:hover{ height: 400px; }
 				.card .top-text{ padding: 0px; }
