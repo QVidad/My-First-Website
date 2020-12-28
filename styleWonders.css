@@ -1,101 +1,225 @@
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-		<title> Hidden Wonders in Luzon: Wonders Page </title>
-		<link rel="stylesheet" type="text/css" href="styleWonders.css">
-		<link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-		<script type="text/javascript" src="javascripts/index.js"></script>
-	</head>
 
-	<body>
-	<header>
-		<!--navigation bar start-->
-		<div class="navibar">
-  			<ul>
-				<li><div class="logo"><img src="pics/LOGO.png" class="img_logo" alt="Logo"/></div>
-  				<li><a href="Home.html">Home</a></li>
-				<li><a href="Wonders.html">Wonders</a></li>
-  				<li><a href="Contact.html">Contact</a></li>
- 		 		<li style="float:right">
-				<form id ="search-form" method="post" action="Search.html">
-				<div id="searchbar" class="collapsed">
-				<div id="search-box">
-     					<div id="sliding-panel-outer">       
-      						<div id="sliding-panel-inner">
-      							<input type="text" id="search" name="search" class="search-input" placeholder="Search..." required/>
-      							<input class="btn" type="submit" onclick="handleSubmit()"/>
-							
-      						</div>
-     					</div>
-      					<div class="search-label">
-        					<i class="fa fa-search"></i>
-        					<i class="fa fa-times"></i>
-      					</div>
-   				</div>
-				</div>
-				</form>
-			</ul>
-		</div>
-		<!--navigation bar end-->
-	</header>
-		<!--upper part start-->
-		<div class="upper">
-  			<div class="centered">See the Wonders in Luzon</div>
-		</div>
-		<!--upper part end-->
-		<!--time section start-->
-		<div class="lower">
-			<h1>Philippine Time</h1>
-			<!--time section start-->
-			<div class="time-section">	
-				<div class="clock">
-      					<div class="display"></div>
-				</div>
-			</div>
-			<!--time section end-->
-		</div>
-		<!--time section end-->
-		<!--region section start-->
-		<div class="region-section">
-			<h1>Region I</h1>
-			<div class = "first">
-				<img src="pics/1a.png" class="photo">
-				<h2>APAYAO ROAD</h2>
-				<h5>This road is a shortcut from Ilocos Norte to Apayao Province. This is a difficult road to travel since it's in a mountain, but because of its wonderful view of Mt. Kilang people are willing to go into the adventure. Thousands of curious visitors and mountaineers now ride a motorbike or a 4x4 off-road vehicle to reach the newly-opened highway linking the two provinces, where a view deck at the top offers them a picturesque sight of surrounding areas with rich flora and fauna, amid a sea of clouds.<br></br>HOW TO GO: When you reach the Banga Pot Landmark in San Nicolas, Ilocos Norte, go East and follow the national highway road until you reach the road. You can also use google map for the direction.
-			</div>
-			<div class = "second">
-				<img src="pics/2a.png" class="photo">
-				<h2>AW-ASEN FALLS</h2>
-				<h5>This falls is located at Sigay, Ilocos Sur. Its not actually the destination that makes it memorable, its the journey. It is not easy to go there that's why adventurer loves it. The tallest waterfall in Ilocos Region, Aw-asen Falls, is located in Sto. Rosario, Sigay, Ilocos Sur. The area of the falls is remote that keeps the place away from pollution, the water comes from a spring uphill, and it is so fresh that you can even drink from it.<br></br>HOW TO GO: Take the road going to Santiago, Ilocos Sur. Before reaching the Santiago bridge, turn right going to Banayoyo. Before reaching San Emilio, descend to Barangay Paltoc. Go straight until you passed by the town of Gregorio del Pilar. From here is a thirty-minute climb going to the town. From the town, coordinate with the municipal government going to the falls.
-Note: The place mostly lacks signages so it’s better to ask the locals while traveling. And take caution as most roads are one-way.
-				</h5>
-			</div>
+			body {
+			background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(pics/Header.png) no-repeat;
+			background-color: #222021;
+			background-size: cover;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			}
+			/* css for the navigation bar */
+			header {
+			position: fixed;
+			top: 0px;
+			width:99%;
+			height: 90px;
+			background-color:#555555;
+			z-index: 1;
+			}
+			header ul {
+  			overflow: hidden;
+			box-sizing: border-box;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			}
+			header li {
+			list-style-type: none;
+ 			float: left;
+			}
+			header li a {
+  			display: block;
+ 			color: #ffffff;
+  			text-align: center;
+ 			padding: 5px 20px;
+  			text-decoration: none;
+			font-family: Cairo;
+			font-size: 25px;
+			cursor: pointer;
+			transition: 1s;
+			}
+			header li a:hover:not(.active) {
+  			background-color: #add8e6;
+			}
+			.active {
+  			background-color: #add8e6;
+			}
+			.logo {
+			position: relative;
+			}
+			.logo .img_logo {
+			width: 75;
+			height: 60;
+			}
+			/* css for the search bar */
+			#searchbar {
+  			position: relative;
+			right: 30px;
+			}
+			#searchbar #sliding-panel-outer {
+  			display: inline-block;
+  			overflow: hidden;
+  			position: absolute;
+			top: 1px;
+  			right: 40px;
+  			width: 370px;
+  			transition: width 0.4s ease;
+			}
+			#searchbar #sliding-panel-inner {
+			background-color: #add8e6;
+ 			width: 320px;
+			border-radius: 30px;
+			border: 3px solid #add8e6;
+			}
+			#searchbar .search-label {
+			background: #add8e6;
+			color: #555555;
+			border-radius: 50%;
+  			width: 40px;
+ 			height: 25px;
+			padding-top: 17px;
+			padding-bottom: 17px;
+			padding-right: 12px;
+			padding-left: 12px;
+  			text-align: center;
+  			position: absolute;
+  			right: 0;
+  			top: 0;
+  			cursor: pointer;
+			font-size: 25px;
+			}
+			#searchbar .search-label .fa-times,
+			#searchbar.collapsed .search-label .fa-search {
+  			display: inline-block;
+			}
+			#searchbar .search-label .fa-search,
+			#searchbar.collapsed .search-label .fa-times {
+  			display: none;
+			}
+			#searchbar.collapsed #sliding-panel-outer {
+  			width: 0px;
+			}
+			.btn {
+			background: #add8e6;
+			height: 50px;
+			width: 90px;
+			border-top-right-radius: 30px;
+			border-bottom-right-radius: 30px;
+			border: none;
+			font-size: 22px;
+			font-family: Cairo;
+			color: #555555;
+			overflow: hidden;
+  			cursor: pointer;
+			}
+			.btn:active {
+			background-color: #ffffff;
+			transition: .5s;
+			}
+			.search-input {
+			height: 50px;
+			width: 220px;
+			border-top-left-radius: 30px;
+			border-bottom-left-radius: 30px;
+			border: none;
+			padding: 10px;
+			background-color: #ffffff;
+			font-size: 20px;
+			font-family: Cairo;
+			top: 1px;
+			}			
 
-			<div class = "third">
-				<img src="pics/4a.png" class="photo">
-				<h2>PASALENG BAY</h2>
-				<h5>This beach can only be seen at Pagudpud, Ilocos Norte. People loves to visit this place because of its crystal clear water. Visitor can even go to the Makagutugot Cave nearby which is one boat ride away. This place is similar to Coron, Palawan that is why people visiting this place also called this place as Palawan of the North.</br></br> HOW TO GO: Pasaleng Bay is located at Pasaleng, Pagudpud, the last barangay of Ilocos Norte going to the next province Cagayan. Ride a bus from Laoag that goes to Tuguegarao, Cagayan or any town of Cagayan, then tell the conductor that your destination is Pasaleng that goes to the Pasaleng Bay which takes around 3 hours. When you reach there, find a tricycle and tell them Pasaleng Bay if you can find one. If there isn't then just ask the locals, they are friendly people.
-				</h5>
-			</div>
-			<h1>Region CAR</h1>
-			<div class = "fourth">
-				<img src="pics/3a.png" class="photo">
-				<h2>KAPARKAN FALLS</h2>
-				<h5>This falls is located at Tineg, Abra. This falls is something that you probably never even thought that could exist. What makes this unique is its uneven land forms which creates a beautiful water flow. Unlike most waterfalls in the Philippines, which are formed by roaring cascades, Kaparkan Falls is distinguished by multi-tiered spring pools/terraces that gently cascade down the forest.</br></br> HOW TO GO: Kaparkan Falls is located in Tineg, the northernmost town of Abra. Getting there is an adventure in itself as it requires a 4 by 4 ride along very rough roads. The ride from Bangued takes around 2 to 4 hours, depending on road conditions. Tineg tourism department organizes transport on a military truck or jeepney. The trucks leave Bangued at 7-8am, while the return trip from the falls departs at 2pm. The months from August to November is the best and only time to schedule your trip since the waterfall dries up during the other half of the year.
-				</h5>
-			</div>
-		<!--region section end-->
-	<!--the footer start-->
-	<footer>
-		<div class="bottomPart"></div>
-	</footer>
-		<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-		<script type="text/javascript" src="javascripts/naviBar.js"></script>
-		<script type="text/javascript" src="javascripts/setTime.js"></script></script>
-		<script type="text/javascript" src="javascripts/search.js"></script>
 
-	</body>
-</html> 
+			/* css for the upper part */
+			.upper {
+  			position: relative;
+			top: 25vh;
+			}
+			.centered {
+  			position: relative;
+  			top: 50%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);
+			font-family: Yatra One;
+			color: #add8e6;
+			font-size: 50px;
+			font-weight: bold;
+			white-space: nowrap;
+			text-align: center;
+			}
+
+			/* css for the lower part */
+			.lower {
+  			position: relative;
+			top: 50vh;
+			text-align: center;
+			white-space: nowrap;
+			}
+			h1 {
+			font-size: 70px;
+			font-family: Yatra One;
+			text-align: center;
+			letter-spacing: 1vh;
+			color: #add8e6;
+			border-bottom: 5px;
+			border-bottom-style: solid;
+			border-bottom-color: #555555;
+			line-height: 35px;
+			}
+			h2 {
+			font-size: 60px;
+			font-family: Cairo;
+			font-weight: 900px;
+			letter-spacing: 5px;
+			color: #add8e6;
+			}
+			h5 {
+			font-size: 25px;
+			font-family: Cairo;
+			text-align: justify;
+			color: #ffffff;
+			padding: 0 5vh 0 5vh;
+			margin-bottom: 10vh;
+			}
+			.time-section {
+			position: relative;
+			font-family: B612;
+			width: 105vh;
+			left: 25%;
+			
+			}
+			.clock{
+			position: relative;
+  			background: #222021;
+  			height: 120px;
+  			line-height: 120px;
+  			text-align: center;
+  			padding: 0 30px;
+  			box-shadow: -3px -3px 7px rgba(255,255,255,0.05),
+               				3px 3px 5px rgba(0,0,0,0.5);
+			}
+			.clock .display{
+  			font-size: 80px;
+  			color: #15f4ee;
+  			letter-spacing: 5px;
+  			font-family: Cairo;
+			}
+			.region-section{
+  			position: relative;
+			text-align: center;
+			top: 50vh;
+			}	
+			.photo {
+			height: 60%;
+  			width: 50%;
+			box-shadow: 5px 5px 10px rgba(255,255,255,0.5);
+			}
+			/* css for the footer */
+			footer {
+			position: absolute;
+    			background-color: #555555;
+    			left: 0;
+    			bottom: -35vh;
+    			height: 100px;
+    			width: 100%;
+    			overflow: hidden;
+			}
