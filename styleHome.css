@@ -446,7 +446,7 @@
 			@media only screen and (max-width: 1000px) {
 				/* for the navigation bar */
 				header { height: 70px; }
-				header li a { font-size: 15px; }
+				header li a { font-size: 15px; padding: 5px 10px;}
 				.logo .img_logo { width: 55; height: 40;}
 				#searchbar .search-label {width: 30px; height: 15px; padding-top: 12px; padding-bottom: 12px;
 							padding-right: 7px; padding-left: 7px; font-size: 15px;}
