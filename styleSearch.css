@@ -43,6 +43,13 @@
 			.active {
   			background-color: #add8e6;
 			}
+			.logo {
+			position: relative;
+			}
+			.logo .img_logo {
+			width: 75;
+			height: 60;
+			}
 			/* css for the search bar */
 			#searchbar {
   			position: relative;
@@ -168,7 +175,6 @@
 			position: relative;
 			height: 220px;
 			left: -110px;
-			background-color: #aaaaaa;
 			border-radius: 20px;
 			box-shadow: -3px -3px 7px rgba(0,0,0,0.5),
                				3px 3px 5px rgba(0,0,0,0.5);
