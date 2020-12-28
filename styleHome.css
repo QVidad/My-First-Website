@@ -4,7 +4,7 @@
 			background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(pics/Turtle.png) no-repeat;
 			background-color: #222021;
 			background-size: cover;
-			height: 90vh;
+			height: 100%;
 			width: 100%;
 			background-position: top-center;
 			position: absolute;
