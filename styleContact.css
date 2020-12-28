@@ -4,8 +4,9 @@
 			background-color: #222021;
 			background-size: cover;
 			background-position: top-center;
-			position: absolute;
+			height: 100%;
 			width: 100%;
+			position: absolute;
 			}
 
 			/* css for the navigation bar */
@@ -164,7 +165,6 @@
 			.title {
 			position: relative;
 			display: flex;
-			width: 60%;
 			top: 50px;
 			left: 25%;
 			}
@@ -196,10 +196,12 @@
 			display: inline;
 			position: relative;
 			width: 50%;
-			height: 30%;
-			top: 25vh;
+			height: 50%;
+			padding-top: 20vh;
 			float: right;
+			top: 5vh;
 			text-align: center;
+			border-left: 3px solid #555555;
 			}
 			.form-control {
 			outline: none;
@@ -212,7 +214,7 @@
 			color: #000000;
 			font-family: B612;
 			font-size: 15px;
-			margin: 5px;
+			margin: 5px; 
 			}
 			#contact-form .message {
 			height: 100px;
@@ -246,9 +248,8 @@
 			position: absolute;
     			background-color: #555555;
     			left: 0;
-    			bottom: -35vh;
+    			bottom: -40vh;
     			height: 100px;
     			width: 100%;
-    			overflow: hidden;
 			}
 			
