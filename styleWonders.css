@@ -43,6 +43,13 @@
 			.active {
   			background-color: #add8e6;
 			}
+			.logo {
+			position: relative;
+			}
+			.logo .img_logo {
+			width: 75;
+			height: 60;
+			}
 			/* css for the search bar */
 			#searchbar {
   			position: relative;
@@ -121,6 +128,7 @@
 			top: 1px;
 			}			
 
+
 			/* css for the upper part */
 			.upper {
   			position: relative;
@@ -144,6 +152,7 @@
   			position: relative;
 			top: 50vh;
 			text-align: center;
+			white-space: nowrap;
 			}
 			h1 {
 			font-size: 70px;
@@ -172,12 +181,14 @@
 			margin-bottom: 10vh;
 			}
 			.time-section {
-			position: absolute;
+			position: relative;
 			font-family: B612;
+			width: 50%;
+			left: 25%;
+			
 			}
 			.clock{
 			position: relative;
-			left: 53vh;
   			background: #222021;
   			height: 120px;
   			line-height: 120px;
@@ -195,11 +206,11 @@
 			.region-section{
   			position: relative;
 			text-align: center;
-			top: 80vh;
+			top: 50vh;
 			}	
 			.photo {
-			height: 420px;
-  			width: 600px;
+			height: 60%;
+  			width: 50%;
 			box-shadow: 5px 5px 10px rgba(255,255,255,0.5);
 			}
 			/* css for the footer */
