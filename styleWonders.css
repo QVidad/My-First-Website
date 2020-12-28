@@ -183,8 +183,8 @@
 			.time-section {
 			position: relative;
 			font-family: B612;
-			width: 40%;
-			left: 30%;
+			width: 105vh;
+			left: 25%;
 			
 			}
 			.clock{
@@ -222,4 +222,32 @@
     			height: 100px;
     			width: 100%;
     			overflow: hidden;
+			}
+
+			/* responsive set for mobiles */
+			@media only screen and (max-width: 1000px) {
+				/* for the navigation bar */
+				header { height: 70px; }
+				header li a { font-size: 15px; padding: 5px 10px;}
+				.logo .img_logo { width: 55; height: 40;}
+				#searchbar .search-label {width: 30px; height: 15px; padding-top: 12px; padding-bottom: 12px;
+							padding-right: 7px; padding-left: 7px; font-size: 15px;}
+				#searchbar { right: 20px;}
+				#searchbar #sliding-panel-outer { top: 1px; width: 230px; }
+				#searchbar #sliding-panel-inner {width: 210px;}
+				.btn {height: 30px; width: 45px; font-size: 12px;}
+				.search-input {height: 30px; width: 150px; padding: 5px; font-size: 12px;}			
+				
+				/* for the upper part */
+  				.centered { font-size: 25px; }
+
+				/* for the time section */
+				.lower { top: 50vh;}
+				h1 { font-size: 45px; letter-spacing: .5vh; }
+				h2 { font-size: 35px; letter-spacing: 2px; }
+				h5 { font-size: 20px; padding: 0 3vh 0 3vh; margin-bottom: 10vh; }
+				.time-section { width: 55vh; left: 25%; }
+				.clock{ height: 70px; line-height: 60px; padding: 0 20px; }
+				.clock .display{ font-size: 50px; letter-spacing: 2px; }
+				.photo { height: 50vh; width: 50%; }
 			}
