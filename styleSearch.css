@@ -170,6 +170,7 @@
 			margin: 20px;
 			display: flex;
 			justify-content: center;
+			visibility: hidden;
 			}
 			.left_part {
 			position: relative;
