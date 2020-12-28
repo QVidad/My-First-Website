@@ -246,7 +246,7 @@
 				h1 { font-size: 45px; letter-spacing: .5vh; }
 				h2 { font-size: 35px; letter-spacing: 2px; }
 				h5 { font-size: 20px; padding: 0 3vh 0 3vh; margin-bottom: 10vh; }
-				.time-section { width: 55vh; left: 25%; }
+				.time-section { width: 60%; left: 25%; }
 				.clock{ height: 70px; line-height: 60px; padding: 0 20px; }
 				.clock .display{ font-size: 50px; letter-spacing: 2px; }
 				.photo { height: 50vh; width: 50%; }
