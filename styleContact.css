@@ -185,11 +185,12 @@
 			position: relative;
 			top: 10vh;
 			left: 15%;
+
 			}
 			.img_logo {
 			position: relative;
 			width: 90%;
-			height: 70%;
+			height: 450px;
 			}
 			/* css for the text boxes */
 			.contact-form {
@@ -248,7 +249,7 @@
 			position: absolute;
     			background-color: #555555;
     			left: 0;
-    			bottom: -40vh;
+    			bottom: -50vh;
     			height: 100px;
     			width: 100%;
 			}
