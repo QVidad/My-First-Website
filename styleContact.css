@@ -4,6 +4,8 @@
 			background-color: #222021;
 			background-size: cover;
 			background-position: top-center;
+			position: absolute;
+			width: 100%;
 			}
 
 			/* css for the navigation bar */
