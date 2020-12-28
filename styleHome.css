@@ -4,9 +4,9 @@
 			background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(pics/Turtle.png) no-repeat;
 			background-color: #222021;
 			background-size: cover;
+			background-position: top-center;
 			height: 100%;
 			width: 100%;
-			background-position: top-center;
 			position: absolute;
 			}
 
@@ -186,7 +186,6 @@
 			.title {
 			position: relative;
 			display: flex;
-			width: 20%;
 			left: 25px;
 			}
 			.rectangle {
@@ -197,6 +196,7 @@
 			}
 			.Luzon {
 			position: relative;
+			font-weight: bold;
 			left: 10px;
 			}
 			.photo {
@@ -233,7 +233,6 @@
 			position: relative;
 			display: flex;
 			width: 50%;
-			left: 25px;
 			}
 			.rectangle2 {
 			position: relative;
